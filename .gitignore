@@ -1,0 +1,267 @@
+# ============================================================
+# .gitignore para proyectos de IA con Python y Jupyter
+# ============================================================
+
+# ------------------------------------------------------------
+# 🔐 SECRETOS Y CREDENCIALES (¡CRÍTICO!)
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+secrets.toml
+.streamlit/secrets.toml
+credentials.json
+service-account*.json
+
+# ------------------------------------------------------------
+# 🐍 PYTHON
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# 📓 JUPYTER NOTEBOOKS
+# ------------------------------------------------------------
+# Descomenta si quieres ignorar notebooks con outputs
+# *.ipynb
+
+# ------------------------------------------------------------
+# 📊 DATOS Y MODELOS (archivos pesados)
+# ------------------------------------------------------------
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# Datos específicos
+data/raw/
+data/processed/
+data/interim/
+datasets/
+models/
+checkpoints/
+*.db
+*.sqlite
+*.sqlite3
+
+# FAISS indexes
+*.faiss
+*.index
+faiss_index/
+vector_store/
+chroma_db/
+qdrant_storage/
+
+# ------------------------------------------------------------
+# 📝 LOGS Y TEMPORALES
+# ------------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.temp
+temp/
+tmp/
+*.bak
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# 🎨 IDE Y EDITORES
+# ------------------------------------------------------------
+# VS Code
+.vscode/
+!.vscode/settings.json.example
+!.vscode/extensions.json.example
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------
+# 🖥️ SISTEMAS OPERATIVOS
+# ------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ------------------------------------------------------------
+# 📦 DEPENDENCIAS Y CACHÉ
+# ------------------------------------------------------------
+# Node.js (si usas alguna herramienta frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Hugging Face cache
+.cache/
+.huggingface/
+transformers_cache/
+
+# Streamlit cache
+.streamlit/cache/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------------------------------------------
+# 🧪 TESTING
+# ------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# ------------------------------------------------------------
+# 📚 DOCUMENTACIÓN GENERADA
+# ------------------------------------------------------------
+docs/_build/
+site/
+_build/
+
+# ------------------------------------------------------------
+# 🗂️ OTROS
+# ------------------------------------------------------------
+*.pid
+*.seed
+*.pid.lock
+.lock
+*.lock
+
+# Archivos temporales de Streamlit
+.streamlit/
+
+# Reportes generados
+*.pdf
+!docs/**/*.pdf
+reports/*.pdf
+reports/*.html
+
+# Capturas de pantalla
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.gif
+
+# Archivos de configuración locales
+config.local.*
+settings.local.*
